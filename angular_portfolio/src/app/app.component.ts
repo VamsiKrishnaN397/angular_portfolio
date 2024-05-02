@@ -1,13 +1,40 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { SharedModule } from './shared/shared.module';
+import { HomeComponent } from './home/home.component';
+import { EducationComponent } from './education/education.component';
+import { WorkexperienceComponent } from './workexperience/workexperience.component';
+import { ContactComponent } from './contact/contact.component';
+import { ResumeComponent } from './resume/resume.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    SharedModule,
+    HomeComponent,
+    EducationComponent,
+    WorkexperienceComponent,
+    ContactComponent,
+    ResumeComponent,
+    SkillsComponent,
+    ProjectsComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
-  title = 'angular_portfolio';
+  title = 'Vamsikrishna Neelam Portfolio';
+
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    // this.router.navigate(['/home'])
+  }
 }
