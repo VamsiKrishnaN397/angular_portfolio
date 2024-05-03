@@ -1,40 +1,132 @@
 <div class="container-fluid" style="background-color: blue;">
-    <div class="row" style="background-color: gray; text-align: center; vertical-align: middle;">
+    <div class="row" style="background-color: lightgray; text-align: center; vertical-align: middle;">
         <div class="col-sm-1 col-md-1 col-lg-6 col-xl-6">
-            <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #D9AFD9;
-            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);">
-                <mat-card-content style="text-align: left;">
-                    <h1>Master's In Computer Science (M.S.)</h1>
-                    <h4>Wright State University</h4>
-                    <h4>Computer Science</h4>
-                    <h4>GPA 3.37</h4>
-                    <h4>Jan 2023 to Dec 2024</h4>
-                </mat-card-content>
-            </mat-card>
+            <div (click)="toggleFlip('M')" [@flipState]="flipM">
+                <div [ngStyle]="{'display': flipM == 'active' ? 'none' : (flipM == 'inactive' ? 'inline' : 'none')}">
+                    <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #D9AFD9;
+                    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);" mat-raised-button matTooltip="Click on card to view more"
+                    aria-label="Card that displays a tooltip when focused or hovered over">
+                        <mat-card-content style="text-align: left;">
+                            <div class="row card__side card__front">
+                                <div class="col-8">
+                                    <h1>Master's In Computer Science (M.S.)</h1>
+                                    <h4>Wright State University</h4>
+                                    <h4>Computer Science</h4>
+                                    <h4>GPA 3.37</h4>
+                                    <h4>January 2023 to December 2024</h4>
+                                </div>
+                                <div class="col-4" style="text-align: right;">
+                                    <img class="img-fluid" src="../../assets/wsu.jpg" width="150px" height="150px" alt="university image goes here">
+                                </div>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div [ngStyle]="{'display': flipM == 'inactive' ? 'none' : (flipM == 'active' ? 'inline' : 'none')}">
+                    <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #D9AFD9;
+                    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);" mat-raised-button matTooltip="Click on card again to turn back"
+                    aria-label="Card that displays a tooltip when focused or hovered over">
+                        <mat-card-content style="text-align: left;">
+                            <div class="row card__side card__back">
+                                <div class="col-8">
+                                    <h1>Course Work</h1>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align: left;">
+                                        <ul>
+                                            @for(subject of MCourseWork; track subject.id){
+                                                <li class="courseWork" *ngIf="subject.sno <= 5">{{subject.name}} - {{subject.id}}</li>
+                                            }
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align: left;">
+                                        <ul>
+                                            @for(subject of MCourseWork; track subject.id){
+                                                <li class="courseWork" *ngIf="subject.sno >= 6">{{subject.name}} - {{subject.id}}</li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
         </div>
         <div class="col-sm-1 col-md-1 col-lg-6 col-xl-6">
-            <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #FEE140;
-            background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);">
-                <mat-card-content style="text-align: left;">
-                    <h1>Bachelors's In Computer Science & Engineering (B.Tech.)</h1>
-                    <h4>Wright State University</h4>
-                    <h4>Computer Science</h4>
-                    <h4>GPA 3.37</h4>
-                    <h4>Jan 2023 to Dec 2024</h4>
-                </mat-card-content>
-            </mat-card>
+            <div (click)="toggleFlip('B')" [@flipState]="flipB">
+                <div [ngStyle]="{'display': flipB == 'active' ? 'none' : (flipB == 'inactive' ? 'inline' : 'none')}">
+                    <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #FEE140;
+                    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);" mat-raised-button matTooltip="Click on card to view more"
+                    aria-label="Card that displays a tooltip when focused or hovered over">
+                        <mat-card-content style="text-align: left;">
+                            <div class="row card__side card__front">
+                                <div class="col-8">
+                                    <h1>Bachelor of Technology In Computer Science & Engineering (B.Tech.)</h1>
+                                    <h4>Jawaharlal Nehru Technological University</h4>
+                                    <h4>Computer Science & Engineering</h4>
+                                    <h4>GPA 3.57</h4>
+                                    <h4>August 2016 to December 2020</h4>
+                                </div>
+                                <div class="col-4" style="text-align: right;">
+                                    <img class="img-fluid" src="../../assets/wsu.jpg" width="150px" height="150px" alt="university image goes here">
+                                </div>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+                <div [ngStyle]="{'display': flipB == 'inactive' ? 'none' : (flipB == 'active' ? 'inline' : 'none')}">
+                    <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #FEE140;
+                    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);" mat-raised-button matTooltip="Click on card again to turn back"
+                    aria-label="Card that displays a tooltip when focused or hovered over">
+                        <mat-card-content style="text-align: left;">
+                            <div class="row card__side card__back">
+                                <h1>Course Work</h1>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="text-align: left;">
+                                        <ul>
+                                            @for(item of BCourseWork; track item.sno){
+                                                <li class="courseWork" *ngIf="item.sno <= 7">{{item.name}} - {{item.id}}</li>
+                                            }
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="text-align: left;">
+                                        <ul>
+                                            @for(subject of BCourseWork; track subject.id){
+                                                <li class="courseWork" *ngIf="subject.sno >= 8 && subject.sno <= 15">{{subject.name}} - {{subject.id}}</li>
+                                            }
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="text-align: left;">
+                                        <ul>
+                                            @for(subject of BCourseWork; track subject.id){
+                                                <li class="courseWork" *ngIf="subject.sno >= 16">{{subject.name}} - {{subject.id}}</li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row" style="background-color: gray; text-align: center; vertical-align: middle;">
         <div class="col-sm-1 col-md-1 col-lg-6 col-xl-6">
             <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #52ACFF;
             background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);">
                 <mat-card-content style="text-align: left;">
-                    <h1>Class 12 (Intermediate)</h1>
-                    <h4>Wright State University</h4>
-                    <h4>Computer Science</h4>
-                    <h4>GPA 3.37</h4>
-                    <h4>Jan 2023 to Dec 2024</h4>
+                    <div class="row">
+                        <div class="col-8">
+                            <h1>Class 12 (Intermediate)</h1>
+                            <h4>Board of Intermediate Education Andhra Pradesh</h4>
+                            <h4>Mathematics, Physics & Chemistry</h4>
+                            <h4>CGPA 9.49</h4>
+                            <h4>July 2014 to May 2016</h4>
+                        </div>
+                        <div class="col-4" style="text-align: right;">
+                            <!-- <img class="img-fluid" src="../../assets/bieap.jpeg" width="150px" height="150px" alt="university image goes here"> -->
+                        </div>
+                    </div>
                 </mat-card-content>
             </mat-card>
         </div>
@@ -42,11 +134,17 @@
             <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #FF3CAC;
             background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);">
                 <mat-card-content style="text-align: left;">
-                    <h1>High School (Class 10)</h1>
-                    <h4>Wright State University</h4>
-                    <h4>Computer Science</h4>
-                    <h4>GPA 3.37</h4>
-                    <h4>Jan 2023 to Dec 2024</h4>
+                    <div class="row">
+                        <div class="col-8">
+                            <h1>Class 10 (Secondary School)</h1>
+                            <h4>Board of Secondary Education Andhra Pradesh</h4>
+                            <h4>CGPA 9.47</h4>
+                            <h4>April 2013 to April 2014</h4>
+                        </div>
+                        <div class="col-4" style="text-align: right;">
+                            <!-- <img class="img-fluid" src="../../assets/bseap.jpeg" width="150px" height="150px" alt="university image goes here"> -->
+                        </div>
+                    </div>
                 </mat-card-content>
             </mat-card>
         </div>

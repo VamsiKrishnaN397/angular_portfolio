@@ -9,5 +9,4 @@ import { SharedModule } from '../shared/shared.module';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
 }

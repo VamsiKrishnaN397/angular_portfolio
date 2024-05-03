@@ -2,3 +2,32 @@
     color: black;
     border-radius: 10px;
 }
+.img-fluid{
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+mat-card-content{
+    text-shadow: 2px 2px 4px gray;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.card__side {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.card__front {
+    -webkit-transform : rotateY(0deg);
+    -ms-transform     : rotateY(0deg);
+    transform         : rotateY(0deg);
+}
+.card__back {
+    -webkit-transform : rotateY(-180deg);
+    -ms-transform     : rotateY(-180deg);
+    transform         : rotateY(-180deg);
+}
+.courseWork{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,3 +1,4 @@
+<!-- Add fixed top class to make nav bar fixed at the top of page -->
 <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-dark shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
   <li class="nav-item">
       <button routerLink="/home" class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">
@@ -57,12 +58,8 @@
   </li>
 </ul>
 
-<!-- <div class="container-fluid" style="background-color: blue;">
-  <div class="row" style="background-color: gray;text-align: center; vertical-align: middle;">
-  </div>
-</div> -->
-
 <router-outlet/>
+<app-scroll-to-top></app-scroll-to-top>
 
 <div style="text-align: center;background-color: gray;">
   <span>
