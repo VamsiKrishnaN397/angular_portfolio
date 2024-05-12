@@ -66,6 +66,12 @@ export class EducationComponent {
     {sno: 23, id: "CS136BC", name: "Design Patterns"},
   ];
 
+  public ICourseWork = [
+    {sno: 1, id: "", name: "Mathematics"},
+    {sno: 2, id: "", name: "Physics"},
+    {sno: 3, id: "", name: "Chemistry"}
+  ];
+
   toggleFlip(type: string) {
     if(type == "M"){
       this.flipM = (this.flipM == 'inactive') ? 'active' : 'inactive';

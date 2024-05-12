@@ -1,1 +1,136 @@
-<p>skills works!</p>
+<div class="container-fluid">
+    <div class="row" style="background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 90%);    
+    text-align: center; vertical-align: middle; padding: 17% 0%;">
+        <div class="heading">
+            <div class="col-lg-12 col-md-12 d-sm-none d-xs-none d-md-block d-none">
+                <p style="font-size: 75px; margin-top: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 500; text-align: center; vertical-align: middle;">Connect with Me :)</p>
+                <br/><br/><br/>
+                <p style="font-size: 35px; font-weight: 600;">I am here for job oppurtunities </p>
+            </div>
+            <div class="col-sm-12 col-xs-12 d-lg-none d-md-none">
+                <p style="font-size: 35px; margin-top: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 500; text-align: center; vertical-align: middle;">Connect with Me :)</p>
+                <br/><br/><br/>
+                <p style="font-size: 25px; font-weight: 600;">I am here for job oppurtunities </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="background: #00467F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ; text-align: center; vertical-align: middle; padding: 15% 0%;">
+        <h1 style="font-weight: 900;">Technical Skills</h1>
+
+        <h2 style="font-weight: 600;">Web Application Development</h2>
+        @for(skill of wad; track wad){
+                <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <mat-card class="mat-card">
+                        <mat-card-content>
+                            <img style="border-radius: 10px;" [src]=skill.url height="70px" width="70px" alt="img">
+                        </mat-card-content>
+                    </mat-card>
+                    <h3 style="font-weight: 500;">{{skill.imgCaption}}</h3>
+                </div>
+                <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+        }
+        
+        <h2 style="font-weight: 600;">Programming Languages</h2>
+        @for(skill of pl; track pl){
+                <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <mat-card class="mat-card">
+                        <mat-card-content>
+                            <img style="border-radius: 10px;" [src]=skill.url height="70px" width="70px" alt="img">
+                        </mat-card-content>
+                    </mat-card>
+                    <h3 style="font-weight: 500;">{{skill.imgCaption}}</h3>
+                </div>
+                <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+        }
+        
+        <h2 style="font-weight: 600;">Testing Tools</h2>
+        @for(skill of tt; track tt){
+                <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <mat-card class="mat-card">
+                        <mat-card-content>
+                            <img style="border-radius: 10px;" [src]=skill.url height="70px" width="70px" alt="img">
+                        </mat-card-content>
+                    </mat-card>
+                    <h3 style="font-weight: 500;">{{skill.imgCaption}}</h3>
+                </div>
+                <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+        }
+        
+        <h2 style="font-weight: 600;">Deployment and Version Control</h2>
+        @for(skill of ds; track ds){
+                <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <mat-card class="mat-card">
+                        <mat-card-content>
+                            <img style="border-radius: 10px;" [src]=skill.url height="70px" width="70px" alt="img">
+                        </mat-card-content>
+                    </mat-card>
+                    <h3 style="font-weight: 500;">{{skill.imgCaption}}</h3>
+                </div>
+                <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+        }
+        
+        <h2 style="font-weight: 600;">Machine Learning and Deep Learning</h2>
+        @for(skill of mdl; track mdl){
+                <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <mat-card class="mat-card">
+                        <mat-card-content>
+                            <img style="border-radius: 10px;" [src]=skill.url height="70px" width="70px" alt="img">
+                        </mat-card-content>
+                    </mat-card>
+                    <h3 style="font-weight: 500;">{{skill.imgCaption}}</h3>
+                </div>
+                <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+        }
+        
+        <h2 style="font-weight: 600;">Operating Systems</h2>
+        @for(skill of os; track os){
+                <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <mat-card class="mat-card">
+                        <mat-card-content>
+                            <img style="border-radius: 10px;" [src]=skill.url height="70px" width="70px" alt="img">
+                        </mat-card-content>
+                    </mat-card>
+                    <h3 style="font-weight: 500;">{{skill.imgCaption}}</h3>
+                </div>
+                <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+        }
+        
+        <h2 style="font-weight: 600;">Others</h2>
+        @for(skill of others; track others){
+                <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <mat-card class="mat-card">
+                        <mat-card-content>
+                            <img style="border-radius: 10px;" [src]=skill.url height="70px" width="70px" alt="img">
+                        </mat-card-content>
+                    </mat-card>
+                    <h3 style="font-weight: 500;">{{skill.imgCaption}}</h3>
+                </div>
+                <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+        }
+    </div>
+
+    <div class="row" style="background-image: linear-gradient(to right, #a8c0ff, #3f2b96); text-align: center; vertical-align: middle; padding: 10% 0%;">
+        <h1 style="font-weight: 900;">Soft Skills</h1>
+        @for(skill of ss; track ss){
+            <div *ngIf="skill.sno % 2 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1" style="margin-top: 15%;"></div>
+            <div class="col-lg-5 col-md-5 col-sm-1 col-xs-1">
+                <img style="border-radius: 10px;" [src]=skill.url height="70px" width="70px" alt="img">
+                <h3 style="font-weight: 500;">{{skill.imgCaption}}</h3>
+                <h5 style="font-weight: 500;">{{skill.description}}</h5>
+            </div>
+            <div *ngIf="skill.sno % 2 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
+        }
+    </div>
+</div>

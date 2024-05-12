@@ -1,0 +1,23 @@
+.mat-card{
+    transition: 0.2s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.mat-card:hover {
+    transform: scale(1.1); 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.btnAnimation{
+    transition: 0.2s;
+}
+
+.btnAnimation:hover{
+    transform: scale(1.1); 
+}
+
+.heading{
+    background: -webkit-linear-gradient(#FAD961, #F76B1C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -19,3 +19,9 @@
 .cardTitle{
     text-shadow: 2px 2px 4px gray;
 }
+
+.heading{
+    background: -webkit-linear-gradient(#FAD961, #F76B1C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

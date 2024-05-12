@@ -1,0 +1,12 @@
+.mat-card{
+    border-radius: 10px; background: #076585;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.heading{
+    background: -webkit-linear-gradient(#FAD961, #F76B1C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}

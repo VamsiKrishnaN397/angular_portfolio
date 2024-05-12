@@ -31,3 +31,9 @@ mat-card-content{
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.heading{
+    background: -webkit-linear-gradient(#FAD961, #F76B1C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

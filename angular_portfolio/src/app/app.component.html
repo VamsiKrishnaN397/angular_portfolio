@@ -1,68 +1,142 @@
 <!-- Add fixed top class to make nav bar fixed at the top of page -->
-<ul class="nav nav-pills nav-fill gap-2 p-1 small bg-dark shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-  <li class="nav-item">
-      <button routerLink="/home" class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">
-        <mat-icon class="material-symbols-outlined">
-          home
-        </mat-icon>
-        Home
-      </button>
-  </li>
-  <li class="nav-item">
-      <button routerLink="/education" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
-        <mat-icon class="material-symbols-outlined">
-          school
-        </mat-icon>
-          Education
-      </button>
-  </li>
-  <li class="nav-item">
-      <button routerLink="/work-experience" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
-        <mat-icon class="material-symbols-outlined">
-          work_history
-        </mat-icon>
-          Work Experience
-      </button> 
-  </li>
-  <li class="nav-item">
-      <button routerLink="/resume" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
-        <mat-icon class="material-symbols-outlined">
-          description
-        </mat-icon>
-          Resume
-      </button>
-  </li>
-  <li class="nav-item">
-      <button routerLink="/skills" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
-        <mat-icon class="material-symbols-outlined">
-          star_rate
-        </mat-icon>
-        Skills
-      </button>
-  </li>
-  <li class="nav-item">
-      <button routerLink="/certification" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
-        <mat-icon class="material-symbols-outlined">
-          workspace_premium
-        </mat-icon>
-          Certifications
-      </button>
-  </li>
-  <li class="nav-item">
+<!-- navbar navbar-expand-lg navbar-light bg-light -->
+<!-- <nav class="nav navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-pills nav-fill gap-2 p-1 shadow-sm fixed-top  navbar-nav nav-link navbar-toggler">
+          <li class="nav-item">
+              <button routerLink="/home" class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">
+                <mat-icon class="material-symbols-outlined">
+                  home
+                </mat-icon>
+                Home
+              </button>
+          </li>
+          <li class="nav-item">
+              <button routerLink="/education" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                <mat-icon class="material-symbols-outlined">
+                  school
+                </mat-icon>
+                  Education
+              </button>
+          </li>
+          <li class="nav-item">
+              <button routerLink="/work-experience" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                <mat-icon class="material-symbols-outlined">
+                  work_history
+                </mat-icon>
+                  Work Experience
+              </button> 
+          </li>
+          <li class="nav-item">
+              <button routerLink="/resume" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                <mat-icon class="material-symbols-outlined">
+                  description
+                </mat-icon>
+                  Resume
+              </button>
+          </li>
+          <li class="nav-item">
+              <button routerLink="/skills" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                <mat-icon class="material-symbols-outlined">
+                  star_rate
+                </mat-icon>
+                Skills
+              </button>
+          </li>
+          <li class="nav-item">
+              <button routerLink="/certification" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                <mat-icon class="material-symbols-outlined">
+                  workspace_premium
+                </mat-icon>
+                  Certifications
+              </button>
+          </li>
+          <li class="nav-item">
+            <button routerLink="/contact" class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+              <mat-icon class="material-symbols-outlined">
+                phone_enabled
+              </mat-icon>
+              Contact
+            </button>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<ul class="nav nav-pills nav-fill gap-2 p-1 shadow-sm fixed-top navbar navbar-expand-lg navbar-light nav-link navbar-toggler">
+    <li class="nav-item">
+        <button routerLink="/home" class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">
+          <mat-icon class="material-symbols-outlined">
+            home
+          </mat-icon>
+          Home
+        </button>
+    </li>
+    <li class="nav-item">
+        <button routerLink="/education" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+          <mat-icon class="material-symbols-outlined">
+            school
+          </mat-icon>
+            Education
+        </button>
+    </li>
+    <li class="nav-item">
+        <button routerLink="/work-experience" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+          <mat-icon class="material-symbols-outlined">
+            work_history
+          </mat-icon>
+            Work Experience
+        </button> 
+    </li>
+    <li class="nav-item">
+        <button routerLink="/resume" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+          <mat-icon class="material-symbols-outlined">
+            description
+          </mat-icon>
+            Resume
+        </button>
+    </li>
+    <li class="nav-item">
+        <button routerLink="/skills" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+          <mat-icon class="material-symbols-outlined">
+            star_rate
+          </mat-icon>
+          Skills
+        </button>
+    </li>
+    <li class="nav-item">
+        <button routerLink="/certification" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+          <mat-icon class="material-symbols-outlined">
+            workspace_premium
+          </mat-icon>
+            Certifications
+        </button>
+    </li>
+    <li class="nav-item">
       <button routerLink="/contact" class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
         <mat-icon class="material-symbols-outlined">
           phone_enabled
         </mat-icon>
-          Contact
+        Contact
       </button>
-  </li>
+    </li>
 </ul>
+
 
 <router-outlet/>
 <app-scroll-to-top></app-scroll-to-top>
 
-<div style="text-align: center;background-color: gray;">
-  <span>
-    &#169; Copyrights Vamsikrishna Neelam
-  </span>
+<div style="text-align: center;background-color: gray; height: 25%;">
+  <div class="row" style="height: 50%;">
+  </div>
+  <div class="row" style="height: 30%; align-items: center; justify-content: center;">
+    <span style="font-size: x-large;">
+      &#169; Copyrights Vamsikrishna Neelam
+    </span>
+  </div>
 </div>

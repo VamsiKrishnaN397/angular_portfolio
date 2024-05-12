@@ -1,3 +1,8 @@
 .nav-link{
-    color: rgb(170, 152, 224);
+    color: black;
+    font-size: large;
+}
+
+mat-icon{
+    vertical-align: bottom;
 }
