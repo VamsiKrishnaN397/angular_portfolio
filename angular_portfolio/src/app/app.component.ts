@@ -33,14 +33,10 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 export class AppComponent {
   title = 'Vamsikrishna Neelam Portfolio';
-  activeTab = document.getElementById('home-tab');
 
   constructor(private router: Router) {}
 
   ngOnInit() {
-    this.router.navigate(['/home'])
+    this.router.navigate(['/home']);
   }
-
-  
-
 }

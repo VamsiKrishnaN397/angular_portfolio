@@ -43,11 +43,23 @@ mat-icon{
     #body{
         margin-top: 16%;
     }
+    #footer{
+        height: 150px;
+        span{
+            margin-top: 15%;
+        }
+    }
 }
 
 @media (max-width: 375px) and (min-width: 321px) {
     #body{
         margin-top: 15%;
+    }
+    #footer{
+        height: 150px;
+        span{
+            margin-top: 15%;
+        }
     }
 }
 
@@ -55,11 +67,23 @@ mat-icon{
     #body{
         margin-top: 13%;
     }
+    #footer{
+        height: 150px;
+        span{
+            margin-top: 15%;
+        }
+    }
 }
 
 @media (max-width: 768px) and (min-width: 426px) {
     #body{
         margin-top: 7.3%;
+    }
+    #footer{
+        height: 150px;
+        span{
+            margin-top: 10%;
+        }
     }
 }
 
@@ -67,16 +91,34 @@ mat-icon{
     #body{
         margin-top: 6%;
     }
+    #footer{
+        height: 150px;
+        span{
+            margin-top: 6.8%;
+        }
+    }
 }
 
 @media (max-width: 1440px) and (min-width: 1025px) {
     #body{
         margin-top: 4.6%;
     }
+    #footer{
+        height: 150px;
+        span{
+            margin-top: 5%;
+        }
+    }
 }
 
 @media (min-width: 1441px) {
     #body{
         margin-top: 2.5%;
+    }
+    #footer{
+        height: 150px;
+        span{
+            margin-top: 3%;
+        }
     }
 }
