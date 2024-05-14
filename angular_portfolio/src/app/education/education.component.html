@@ -18,7 +18,7 @@
     <div class="row" style="background: lightgray;
     background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px; text-align: center; vertical-align: middle; padding: 7% 0% 7% 0%;">
         <div class="col-1"></div>
-        <div class="col-sm-1 col-md-1 col-lg-5 col-xl-5">
+        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
             <div (click)="toggleFlip('M')" [@flipState]="flipM">
                 <div [ngStyle]="{'display': flipM == 'active' ? 'none' : (flipM == 'inactive' ? 'inline' : 'none')}">
                     <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #D9AFD9;
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-1 col-md-1 col-lg-5 col-xl-5">
+        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
             <div (click)="toggleFlip('B')" [@flipState]="flipB">
                 <div [ngStyle]="{'display': flipB == 'active' ? 'none' : (flipB == 'inactive' ? 'inline' : 'none')}">
                     <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #FEE140;
@@ -132,7 +132,7 @@
         <div class="col-1"></div>
         <div style="margin: 3%;"></div>
         <div class="col-1"></div>
-        <div class="col-sm-1 col-md-1 col-lg-5 col-xl-5">
+        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
             <div (click)="toggleFlip('I')" [@flipState]="flipI">
                 <div [ngStyle]="{'display': flipI == 'active' ? 'none' : (flipI == 'inactive' ? 'inline' : 'none')}">
                     <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #52ACFF;
@@ -178,7 +178,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-1 col-md-1 col-lg-5 col-xl-5">
+        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
             <mat-card class="mat-card" style="margin: 5px; text-align: left; background-color: #FF3CAC;
             background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);">
                 <mat-card-content style="text-align: left;">

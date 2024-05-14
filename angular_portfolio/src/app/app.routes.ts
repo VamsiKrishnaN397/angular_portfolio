@@ -6,11 +6,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CertificationsComponent } from './certifications/certifications.component';
-import { SharedModule } from './shared/shared.module';
 
 export const routes: Routes = [
-    // { path: '', redirectTo: '/portfolio', pathMatch: 'full' },
-    // { path: 'portfolio', loadChildren: () => import('./ui/ui.module').then((c) => m.UiModule), component: UiComponent }
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent, pathMatch: 'full' },
     { path: 'education', component: EducationComponent, pathMatch: 'full' },
