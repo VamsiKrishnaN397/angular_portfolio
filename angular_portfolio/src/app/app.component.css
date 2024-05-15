@@ -11,7 +11,7 @@
 }
 
 .nav-link{
-    color: black;
+    color: purple;
     font-size: large;
 }
 
@@ -23,25 +23,21 @@ mat-icon{
     vertical-align: bottom;
 }
 
+span{
+    color: #3a0ca3;
+}
+
+/* For diplsaying my website name on small screens */
 @media (min-width: 991px) {
     .navbar-brand{
         display: none;
-        background-clip: text;
-        background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
-        color: var(--color-background);
-        font-size: var(--font-size);
-        font-weight: var(--font-weight);
-        letter-spacing: var(--letter-spacing);
-        padding: calc(--stroke-width / 2);
-        -webkit-text-stroke-color: transparent;
-        -webkit-text-stroke-width: var(--stroke-width);
-        font-family: Poppins, sans-serif;
     }
 }
 
+/* Mobile Small */
 @media (max-width: 320px) {
     #body{
-        margin-top: 16%;
+        margin-top: 25%;
     }
     #footer{
         height: 150px;
@@ -51,9 +47,10 @@ mat-icon{
     }
 }
 
+/* Mobile Medium */
 @media (max-width: 375px) and (min-width: 321px) {
     #body{
-        margin-top: 15%;
+        margin-top: 21%;
     }
     #footer{
         height: 150px;
@@ -63,9 +60,10 @@ mat-icon{
     }
 }
 
+/* Mobile Large */
 @media (max-width: 425px) and (min-width: 376px) {
     #body{
-        margin-top: 13%;
+        margin-top: 19%;
     }
     #footer{
         height: 150px;
@@ -75,9 +73,10 @@ mat-icon{
     }
 }
 
+/* Tablet */
 @media (max-width: 768px) and (min-width: 426px) {
     #body{
-        margin-top: 7.3%;
+        margin-top: 10.3%;
     }
     #footer{
         height: 150px;
@@ -87,9 +86,10 @@ mat-icon{
     }
 }
 
+/* Laptop */
 @media (max-width: 1024px) and (min-width: 769px) {
     #body{
-        margin-top: 6%;
+        margin-top: 6.5%;
     }
     #footer{
         height: 150px;
@@ -99,6 +99,7 @@ mat-icon{
     }
 }
 
+/* Laptop Large */
 @media (max-width: 1440px) and (min-width: 1025px) {
     #body{
         margin-top: 4.6%;
@@ -111,6 +112,7 @@ mat-icon{
     }
 }
 
+/* 4K */
 @media (min-width: 1441px) {
     #body{
         margin-top: 2.5%;

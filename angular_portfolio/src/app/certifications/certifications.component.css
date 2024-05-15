@@ -3,3 +3,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.img-fluid{
+    height: 350px;
+    width: 750px;
+}

@@ -1,14 +1,14 @@
 .mat-card{
     color: black;
     border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .img-fluid{
     border-radius: 7px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 mat-card-content{
-    text-shadow: 2px 2px 4px gray;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px gray;    
 }
 .card__side {
     cursor: pointer;
@@ -31,9 +31,29 @@ mat-card-content{
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .heading{
     background: -webkit-linear-gradient(#FAD961, #F76B1C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* Laptop */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .cardHeight{
+        height: 306px;
+    }
+}
+
+/* Laptop Large */
+@media (max-width: 1440px) and (min-width: 1025px) {
+    .cardHeight{
+        height: 306px;
+    }
+}
+
+/* 4K */
+@media (min-width: 1441px) {
+    .cardHeight{
+        height: 306px;
+    }
 }

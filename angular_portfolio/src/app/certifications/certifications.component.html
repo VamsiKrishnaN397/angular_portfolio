@@ -15,12 +15,13 @@
             </div>
         </div>
     </div>
-    <div class="row" style="background: lightgray; text-align: center; vertical-align: middle; padding: 7% 0% 7% 0%;">
+    <div class="row" style="background: #acc8e5; text-align: center; vertical-align: middle; padding: 7% 0% 7% 0%;">
+        <h1 style="font-weight: 900;">Certifications</h1>
         @for(cert of certification; track certification){
             <div *ngIf="cert.sno % 2 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
             <div class="col-lg-5 col-md-5 col-sm-1 col-xs-1">
                 <a [href]=cert.url target="_blank">
-                    <img style="border-radius: 10px;" [src]=cert.url height="300" width="750" class="img-fluid">
+                    <img style="border-radius: 10px;" [src]=cert.url class="img-fluid">
                 </a>
                 <h3 style="font-weight: 500;">{{cert.name}}</h3>
             </div>
