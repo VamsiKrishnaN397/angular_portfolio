@@ -15,7 +15,7 @@
             </div>
         </div>
         <div style="padding-top: 5%;">
-            <a href="https://drive.google.com/file/d/1gQUuh5O4-44XVwnq3z5o-GP8X6b_f49n/view?usp=drive_link" target="_blank">
+            <a href="https://drive.google.com/file/d/1oGOq3GlInmgFMUXudu64SsvZyUaU9aHJ/view?usp=drive_link" target="_blank">
                 <button type="button" style="border-radius: 10px;" class="btn btn-success btnAnimation">
                     <span style="border-radius: 10px; padding: 25px; font-size: 35px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 500; text-align: center; vertical-align: middle;">
                         View Resume
@@ -23,6 +23,15 @@
                 </button>
             </a>
         </div>
+    </div>
+    <div class="row" style="background: #acc8e5; text-align: center; vertical-align: middle; padding: 7% 0% 7% 0%;">
+        @for(photo of honor; track honor){
+            <div *ngIf="photo.sno % 2 == 1" class="col-1"></div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-1 col-xs-1">
+                <img style="margin: 5px; padding-right: 5px;" height="500px" [src]=photo.url alt="My Picture goes here" class="img-fluid imgCard">
+            </div>
+            <div *ngIf="photo.sno % 2 == 0" class="col-1"></div>
+        }
     </div>
     <div class="row" style="background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);

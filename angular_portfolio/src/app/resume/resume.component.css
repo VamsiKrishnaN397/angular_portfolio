@@ -21,3 +21,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.imgCard{
+    border-radius: 30px;
+    height: 600px;
+    width: 475px;
+}
