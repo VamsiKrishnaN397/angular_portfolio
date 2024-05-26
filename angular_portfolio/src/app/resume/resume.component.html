@@ -25,10 +25,11 @@
         </div>
     </div>
     <div class="row" style="background: #acc8e5; text-align: center; vertical-align: middle; padding: 7% 0% 7% 0%;">
+        <p style="font-size: x-large; font-weight: 600;">Honors and Achievements</p>
         @for(photo of honor; track honor){
             <div *ngIf="photo.sno % 2 == 1" class="col-1"></div>
-            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-1 col-xs-1">
-                <img style="margin: 5px; padding-right: 5px;" height="500px" [src]=photo.url alt="My Picture goes here" class="img-fluid imgCard">
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-2 col-xs-2">
+                <img style="margin: 5px; padding-right: 5px;" [src]=photo.url alt="My Picture goes here" class="img-fluid imgCard">
             </div>
             <div *ngIf="photo.sno % 2 == 0" class="col-1"></div>
         }

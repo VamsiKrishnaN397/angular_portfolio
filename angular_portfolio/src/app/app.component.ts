@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
@@ -37,6 +37,12 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   ngOnInit() {
+    this.router.events.subscribe((event) => { 
+      if (!(event instanceof NavigationEnd)) { 
+          return; 
+      } 
+      window.scrollTo(0, 0) 
+    }); 
     this.router.navigate(['/home']);
   }
 }
