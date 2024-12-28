@@ -14,19 +14,20 @@ export class SkillsComponent {
     {sno: 1, imgCaption: "HTML 5", url: "./assets/html.png"},
     {sno: 2, imgCaption: "CSS 3", url: "./assets/css.png"},
     {sno: 3, imgCaption: "Bootstrap 5", url: "./assets/bootstrap.png"},
-    {sno: 4, imgCaption: "Angular 17", url: "./assets/angular.png"},
-    {sno: 5, imgCaption: "Angular Material 17", url: "./assets/angularMaterial.png"},
-    {sno: 6, imgCaption: "Kendo UI", url: "./assets/kendo.png"},
-    {sno: 7, imgCaption: "Dev Extreme", url: "./assets/devExtreme.png"},
-    {sno: 8, imgCaption: ".Net Framework", url: "./assets/netFramework.png"},
-    {sno: 9, imgCaption: ".Net Core 6.0", url: "./assets/netCore.png"},
-    {sno: 10, imgCaption: "Linq to Sql", url: "./assets/linq.png"},
-    {sno: 11, imgCaption: "Entity Framework", url: "./assets/entity.png"},
-    {sno: 12, imgCaption: "JavaScript", url: "./assets/javascript.png"},
-    {sno: 13, imgCaption: "TypeScript", url: "./assets/typescript.png"},
-    {sno: 14, imgCaption: "JQuery", url: "./assets/jquery.png"},
-    {sno: 15, imgCaption: "MySql", url: "./assets/mysql.png"},
-    {sno: 16, imgCaption: "Microsoft Sql Server", url: "./assets/mssql.png"}
+    {sno: 4, imgCaption: "React 18", url: "./assets/react.png"},
+    {sno: 5, imgCaption: "Angular 17", url: "./assets/angular.png"},
+    {sno: 6, imgCaption: "Angular Material 17", url: "./assets/angularMaterial.png"},
+    {sno: 7, imgCaption: "Kendo UI", url: "./assets/kendo.png"},
+    {sno: 8, imgCaption: "Dev Extreme", url: "./assets/devExtreme.png"},
+    {sno: 9, imgCaption: ".Net Framework", url: "./assets/netFramework.png"},
+    {sno: 10, imgCaption: ".Net Core 6.0", url: "./assets/netCore.png"},
+    {sno: 11, imgCaption: "Linq to Sql", url: "./assets/linq.png"},
+    {sno: 12, imgCaption: "Entity Framework", url: "./assets/entity.png"},
+    {sno: 13, imgCaption: "JavaScript", url: "./assets/javascript.png"},
+    {sno: 14, imgCaption: "TypeScript", url: "./assets/typescript.png"},
+    {sno: 15, imgCaption: "JQuery", url: "./assets/jquery.png"},
+    {sno: 16, imgCaption: "MySql", url: "./assets/mysql.png"},
+    {sno: 17, imgCaption: "Microsoft Sql Server", url: "./assets/mssql.png"}
   ]
 
   // Programming Languages

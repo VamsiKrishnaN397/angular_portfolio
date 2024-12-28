@@ -7,11 +7,13 @@
                 <p style="font-size: 75px; margin-top: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 500; text-align: center; vertical-align: middle;">Connect with Me :)</p>
                 <br/><br/><br/>
                 <p style="font-size: 35px; font-weight: 600;">I am here for job oppurtunities </p>
+                <p style="font-size: 35px; font-weight: 600;">I am a full time Job Seeker with Master's in Computer Science ! </p>
             </div>
             <div class="col-sm-12 col-xs-12 d-lg-none d-md-none">
                 <p style="font-size: 35px; margin-top: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 500; text-align: center; vertical-align: middle;">Connect with Me :)</p>
                 <br/><br/><br/>
                 <p style="font-size: 25px; font-weight: 600;">I am here for job oppurtunities </p>
+                <p style="font-size: 25px; font-weight: 600;">I am a full time Job Seeker with Master's in Computer Science ! </p>
             </div>
         </div>
     </div>
@@ -126,9 +128,13 @@
         @for(skill of ss; track ss){
             <div *ngIf="skill.sno % 2 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1" style="margin-top: 15%;"></div>
             <div class="col-lg-5 col-md-5 col-sm-1 col-xs-1">
-                <img style="border-radius: 10px;" [src]=skill.url height="70px" width="70px" alt="img">
-                <h3 style="font-weight: 500;">{{skill.imgCaption}}</h3>
-                <h5 style="font-weight: 500;">{{skill.description}}</h5>
+                <div class="card">
+                    <div class="card-body">
+                        <img style="border-radius: 10px;" [src]=skill.url height="70px" width="70px" alt="img">
+                        <h3 style="font-weight: 500;">{{skill.imgCaption}}</h3>
+                        <h5 style="font-weight: 500;">{{skill.description}}</h5>
+                    </div>
+                  </div>
             </div>
             <div *ngIf="skill.sno % 2 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
         }
