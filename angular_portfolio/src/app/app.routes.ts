@@ -1,5 +1,6 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
 import { WorkexperienceComponent } from './workexperience/workexperience.component';
@@ -17,12 +18,13 @@ export const routes: Routes = [
     { path: 'contact', component:  ContactComponent, pathMatch: 'full' },
     { path: 'skills', component:  SkillsComponent, pathMatch: 'full' },
     { path: 'certification', component:  CertificationsComponent, pathMatch: 'full' },
-    {path: '**', component: HomeComponent}
+    {path: '**', redirectTo: 'home'}
 ];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes, { useHash: true })],
-    exports: [RouterModule]
+    exports: [RouterModule],
+    providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}] 
 })
 
 export class AppRoutingModule {}
