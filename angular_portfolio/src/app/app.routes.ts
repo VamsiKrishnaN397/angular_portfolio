@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
 import { WorkexperienceComponent } from './workexperience/workexperience.component';
@@ -18,3 +19,10 @@ export const routes: Routes = [
     { path: 'certification', component:  CertificationsComponent, pathMatch: 'full' },
     {path: '**', component: HomeComponent}
 ];
+
+@NgModule({
+    imports: [RouterModule.forRoot(routes, { useHash: true })],
+    exports: [RouterModule]
+})
+
+export class AppRoutingModule {}

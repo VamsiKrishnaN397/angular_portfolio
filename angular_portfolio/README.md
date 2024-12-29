@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Command for Production Build and Uploading to Github Pages 
+
+ng build --configuration=production --base-href="/angular_portfolio/"
+
+## Things to do to run locally 
+
+Comment the base href with /angular_portfolio/ and  make it just / to run locally without any errors in index.html file but for deployment we must use the 
+angular_portfolio else we get 404 not found error !
