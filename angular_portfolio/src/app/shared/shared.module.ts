@@ -5,7 +5,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatButtonModule} from '@angular/material/button';
 import {MatStepperModule} from '@angular/material/stepper';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   imports: [
@@ -25,6 +24,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MatStepperModule
   ],
   declarations: [],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }]
+  providers: []
 })
 export class SharedModule { }
