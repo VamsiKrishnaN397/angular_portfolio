@@ -124,3 +124,13 @@ span{
         }
     }
 }
+
+@keyframes cloudAnimation {
+    from { background-position: 0 0; }
+    to { background-position: -1000px 0; }
+}
+
+.cloud-background {
+    background-image: url('../assets/cloud.jpg');
+    animation: cloudAnimation 20s linear infinite;
+}

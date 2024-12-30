@@ -26,12 +26,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-
-## Command for Production Build and Uploading to Github Pages 
+## Command for Production Build and Uploading to Github Pages
 
 ng build --configuration=production --base-href="/angular_portfolio/"
 
-## Things to do to run locally 
+## Things to do to run locally
 
-Comment the base href with /angular_portfolio/ and  make it just / to run locally without any errors in index.html file but for deployment we must use the 
+Comment the base href with /angular_portfolio/ and make it just / to run locally without any errors in index.html file but for deployment we must use the
 angular_portfolio else we get 404 not found error !
+
+Everytime before pushing code to Github add a 404.html file in the docs folder along with the dist build to prevent the angular spa page reload and refresh issue of getting 404 page not found error ! I can keep using the angular custom cli builder to automcatically generate the 404.html file by copying the contents of the newly generated index.html file ! Link to article to do it atuomcatically https://dev.to/andyt2503/angular-fix-404-error-after-reloading-github-pages-with-custom-angular-cli-builder-1270
