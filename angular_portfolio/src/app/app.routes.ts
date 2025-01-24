@@ -8,6 +8,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CertificationsComponent } from './certifications/certifications.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { CopyrightsComponent } from './copyrights/copyrights.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,6 +20,8 @@ export const routes: Routes = [
     { path: 'contact', component:  ContactComponent, pathMatch: 'full' },
     { path: 'skills', component:  SkillsComponent, pathMatch: 'full' },
     { path: 'certification', component:  CertificationsComponent, pathMatch: 'full' },
+    { path: 'projects', component:  ProjectsComponent, pathMatch: 'full' },
+    { path: 'copyrights', component:  CopyrightsComponent, pathMatch: 'full' },
     {path: '**', component: HomeComponent}
 ];
 

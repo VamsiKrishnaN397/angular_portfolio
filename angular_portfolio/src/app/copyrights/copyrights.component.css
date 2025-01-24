@@ -1,0 +1,43 @@
+.heading{
+    background: -webkit-linear-gradient(#FAD961, #F76B1C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img-fluid{
+    height: 350px;
+    width: 750px;
+}
+
+.div-common {
+    display: none;
+    text-align: center;
+    /* padding: 20px;
+    margin: 30px; */
+}
+
+/* Show this div on small screens (width <= 600px) */
+@media (max-width: 600px) {
+    .div-small-screen {
+        display: block;
+        background-color: lightblue;
+        margin-top: 70px;
+    }
+}
+
+/* Show this div on medium screens (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .div-medium-screen {
+        display: block;
+        background-color: lightgreen;
+    }
+}
+
+/* Show this div on large screens (width > 1024px) */
+@media (min-width: 1025px) {
+    .div-large-screen {
+        height: 75vh;
+        display: block;
+        background-color: lightcoral;
+    }
+}

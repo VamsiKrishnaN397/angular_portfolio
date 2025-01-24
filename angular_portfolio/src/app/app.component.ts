@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { CopyrightsComponent } from './copyrights/copyrights.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @Component({
@@ -25,6 +26,7 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     ResumeComponent,
     SkillsComponent,
     ProjectsComponent,
+    CopyrightsComponent,
     ScrollToTopComponent
   ],
   templateUrl: './app.component.html',
