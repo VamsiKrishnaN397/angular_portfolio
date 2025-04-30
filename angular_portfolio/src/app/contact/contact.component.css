@@ -1,0 +1,58 @@
+.row{
+    background-color: white;
+    margin-top: auto;
+}
+
+.mat-card{
+    color: black;
+    border-radius: 10px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    height: 98%;    
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.imgCard{
+    border-radius: 30px;
+}
+
+.cardTitle{
+    text-shadow: 2px 2px 4px gray;
+    font-size: xx-large;
+}
+
+.heading{
+    background: -webkit-linear-gradient(#FAD961, #F76B1C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 16px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.form-field {
+    flex: 1;
+    min-width: 100px;
+}
+
+.full-width {
+    width: 100%;
+    margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}

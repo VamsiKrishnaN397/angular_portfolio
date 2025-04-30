@@ -1,1 +1,86 @@
-<p>contact works!</p>
+<div class="container-fluid">
+    <div class="row" style="background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 90%);    
+    text-align: center; vertical-align: middle; padding: 3% 0%;">
+        <div class="col-1"></div>
+        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-1 col-xs-1" style="padding: 7%">
+            <p class="cardTitle">
+                Contact Me
+            </p>
+            <h3>
+                Feel Free to Contact me via Email or fill out the form to send an email
+            </h3>
+            <h4 style="display: flex; align-items: center; gap: 8px;">
+                <mat-icon class="material-symbols-outlined">
+                    mail
+                </mat-icon>
+                <a href="mailto: nvamsikrishna.neelam@gmail.com">
+                    nvamsikrishna.neelam&#64;gmail.com
+                </a>
+            </h4>
+            <h4 style="display: flex; align-items: center; gap: 8px;">
+                <mat-icon class="material-symbols-outlined">
+                    location_on
+                </mat-icon>
+                Dayton, Ohio, United States of America - 45324
+            </h4>
+            <h4 style="display: flex; flex-direction: row; align-items: center; gap: 8px;">
+                <img src="assets/linkedin.png" alt="linkedin" style="width: 20px; height: 20px;">
+                <a href="https://www.linkedin.com/in/neelam-v-193150173/">
+                    LinkedIn
+                </a>
+                <img src="assets/githubIcon.png" alt="github" style="width: 20px; height: 20px;">
+                <a href="https://github.com/VamsiKrishnaN397">
+                    GitHub
+                </a>
+            </h4>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-1 col-xs-1">
+            <mat-card class="mat-card img-fluid" style="margin: 4px; text-align: left;">
+                <mat-card-content>
+                    <form class="contact-form" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+                        <div class="form-row">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-label>First</mat-label>
+                                <input matInput placeholder="First" id="firstname" name="firstname" ngModel>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-label>Last</mat-label>
+                                <input matInput placeholder="Last" id="lastname" name="lastname" ngModel>
+                            </mat-form-field>
+                        </div>
+                        
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Email</mat-label>
+                            <p class="text-red-500 text-sm" *ngIf="email.invalid && email.touched">
+                                <span *ngIf="email.errors?.['required']">Email is required.</span>
+                                <span *ngIf="email.errors?.['email']">Invalid email address.</span>
+                            </p>
+                            <input matInput placeholder="example@email.com" type="email" required  id="email" name="email" [(ngModel)]="contact.email" email #email="ngModel">
+                        </mat-form-field>
+                        
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Company Name</mat-label>
+                            <input matInput placeholder="Company Name" type="text" id="companyName" name="companyName" ngModel>
+                        </mat-form-field>
+                        
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Phone</mat-label>
+                            <input matInput placeholder="XXX-XXX-XXXX" type="tel" id="phone" name="phone" ngModel>
+                        </mat-form-field>
+                        
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Message</mat-label>
+                            <textarea matInput placeholder="Type your message ..." rows="4" id="message" name="message" ngModel></textarea>
+                        </mat-form-field>
+                        <button class="text-center" mat-raised-button color="primary">
+                            Deliver the message !
+                        </button>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>

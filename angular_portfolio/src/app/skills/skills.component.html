@@ -22,9 +22,9 @@
     background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     ; text-align: center; vertical-align: middle; padding: 15% 0%;">
-        <h1 style="font-weight: 900;">Technical Skills</h1>
+        <p class="mainHeading">Technical Skills</p>
 
-        <h2 style="font-weight: 600;">Web Application Development</h2>
+        <p class="subHeading">Web Application Development</p>
         @for(skill of wad; track wad){
                 <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
@@ -38,7 +38,7 @@
                 <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
         }
         
-        <h2 style="font-weight: 600;">Programming Languages</h2>
+        <p class="subHeading">Programming Languages</p>
         @for(skill of pl; track pl){
                 <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
@@ -52,7 +52,7 @@
                 <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
         }
         
-        <h2 style="font-weight: 600;">Testing Tools</h2>
+        <p class="subHeading">Testing Tools</p>
         @for(skill of tt; track tt){
                 <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
@@ -66,7 +66,7 @@
                 <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
         }
         
-        <h2 style="font-weight: 600;">Deployment and Version Control</h2>
+        <p class="subHeading">Deployment and Version Control</p>
         @for(skill of ds; track ds){
                 <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
@@ -80,7 +80,7 @@
                 <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
         }
         
-        <h2 style="font-weight: 600;">Machine Learning and Deep Learning</h2>
+        <p class="subHeading">Machine Learning and Deep Learning</p>
         @for(skill of mdl; track mdl){
                 <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
@@ -94,7 +94,7 @@
                 <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
         }
         
-        <h2 style="font-weight: 600;">Operating Systems</h2>
+        <p class="subHeading">Operating Systems</p>
         @for(skill of os; track os){
                 <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
@@ -108,7 +108,7 @@
                 <div *ngIf="skill.sno % 5 == 0" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
         }
         
-        <h2 style="font-weight: 600;">Others</h2>
+        <p class="subHeading">Others</p>
         @for(skill of others; track others){
                 <div *ngIf="skill.sno % 5 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
@@ -124,7 +124,7 @@
     </div>
 
     <div class="row" style="background-image: linear-gradient(to right, #a8c0ff, #3f2b96); text-align: center; vertical-align: middle; padding: 10% 0%;">
-        <h1 style="font-weight: 900;">Soft Skills</h1>
+        <p class="subHeading">Soft Skills</p>
         @for(skill of ss; track ss){
             <div *ngIf="skill.sno % 2 == 1" class="col-lg-1 col-sm-1 col-md-1 col-xs-1" style="margin-top: 15%;"></div>
             <div class="col-lg-5 col-md-5 col-sm-1 col-xs-1">
