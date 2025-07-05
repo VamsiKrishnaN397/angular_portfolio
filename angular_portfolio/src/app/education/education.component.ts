@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { MainBlockComponent } from '../main-block/main-block.component';
 
 @Component({
   selector: 'app-education',
   standalone: true,
-  imports: [SharedModule],
+  imports: [SharedModule, MainBlockComponent],
   templateUrl: './education.component.html',
   styleUrl: './education.component.css',
   animations: [
